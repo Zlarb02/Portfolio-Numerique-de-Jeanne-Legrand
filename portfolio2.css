@@ -1,0 +1,1506 @@
+*{margin:0;padding:0;}
+
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
+
+
+
+
+body{
+	background-color: #F2F1EF;
+	/* font-family:'Arvo', serif; */
+	overflow:hidden;
+
+    font-family: 'Nunito', sans-serif;
+
+
+}
+.img-animate{margin-top:-2%;margin-left:-4% }
+
+ .fa-angle-left{color:#f9c0cf;transform:scale(3) translate(44px, -40px);position:sticky; z-index:2000}
+.fa-angle-right{color:#f9c0cf;transform:scale(3) translate(-27px, -40px);position:sticky; z-index:2000}
+
+.modal-item-Trad > .fa-angle-left, .modal-item-Trad > .fa-angle-right, .modal-item-Anim > .fa-angle-left, .modal-item-Anim > .fa-angle-right, .modal-item-3D > .fa-angle-left, .modal-item-3D > .fa-angle-right {color:#e53454;}
+
+h1{
+    font-family: 'Nunito', sans-serif;
+	font-size:120%;
+	text-align:right;
+	padding:7%;color:#F5F5F5;
+}
+h2{
+	text-align:center;
+	display:none;
+}
+
+h5{font-family: 'Nunito', sans-serif;
+	font-size:120%;
+	text-align:right;
+	padding:7%;color:#000010;}
+
+.main{
+	height:88%;
+	overflow:auto;
+}
+
+#hs{z-index:6;width:35vmin;height:auto;margin:4% 0 0 12%;}
+
+.main h1{
+	text-align:left;
+	.
+}
+
+.main ul{margin:9vmin 0 0 8vmin;}
+
+.main li{
+	list-style-type:none;
+	display:inline-block;
+	margin:0 1% 0 1%;
+}
+.main a{
+	color:white;
+	text-decoration:none;
+}
+
+.vignetteNum{
+	width:25vmin;
+	height:25vmin;
+	background:url(img/numVertic.jpeg) no-repeat;
+	background-size:cover;
+	text-align:center;
+	color:#22313F;
+	font-family:calibri;
+	overflow:hidden;
+	transition:all 0.7s ease;
+}
+
+.rectoNum{
+	position:sticky;
+	opacity:1;
+	padding-top:3vh;
+} 
+
+.versoNum{
+	position:relative;
+	top:-400px;
+	opacity:0;
+	padding-top:70px;
+}
+
+.vignetteNum:hover{	
+	border-radius:100%;
+	/* background:url(img/num/1.png) no-repeat; */
+	/* background-size:cover; */
+}
+
+.vignetteNum:hover .versoNum{
+	opacity:0;
+}
+
+.vignetteNum:hover .rectoNum{
+	opacity:0;
+}
+
+.modal-item-Num{
+	position:fixed;
+	top:7%;
+	right:0%;
+	bottom:5%;
+	left:0%;
+	z-index:5;
+	opacity:0;
+	transition: all 0.7s ease;
+	-webkit-transition:opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	pointer-events: none;
+	overflow:auto;
+	color:#afafaf;
+	background:#435e77;
+	padding:2%;
+}
+
+.modal-item-Num:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modal-item-Num > div {
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+
+.fermer-itemNum{
+	position:fixed;
+	top:7vh;
+	right:3vw;
+	color:#f9c0cf;
+	transform:scale(0.4);
+}
+
+.vignetteTrad{
+	width:25vmin;
+	height:25vmin;
+	background:url(img/trad.jpg) no-repeat;
+	background-size:cover;
+	text-align:center;
+	color:#22313F;
+	font-family:calibri;
+	font-size: 1%;
+	overflow:hidden;
+	transition:all 0.7s ease;
+}
+
+
+
+.rectoTrad{
+	padding-top:3vh;
+} 
+
+.versoTrad{
+	padding-top:70px;
+}
+
+.vignetteTrad:hover {
+border-radius:100%;
+}
+
+.vignetteTrad:hover .versoTrad{
+	opacity:0;
+}
+
+
+.vignetteTrad:hover .rectoTrad{
+	opacity:0;
+}
+
+
+.modal-item-Trad{
+	position:fixed;
+	top:7%;
+	right:0%;
+	bottom:5%;
+	left:0%;
+	background:#dbc3da;
+	z-index:5;
+	opacity:0;
+	-webkit-transition:opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	pointer-events: none;
+	padding:2%;
+}
+
+.modal-item-Trad:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modal-item-Trad > div {
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+
+
+
+.fermer-itemTrad{
+	position:fixed;
+	top:7vh;
+	right:3vw;
+	color:#e53454;
+	transform:scale(0.4);
+}
+
+.vignette3D{
+	width:25vmin;
+	height:25vmin;
+	background:url(img/3d.jpg);
+	background-size:cover;
+	text-align:center;
+	color:#22313F;
+	font-family:calibri;
+	overflow:hidden;
+	transition:all 0.7s ease;
+}
+
+li{
+	list-style-type:none;.
+}
+
+.recto3D{
+	position:relative;
+	opacity:1;
+	padding-top:3vh;
+} 
+
+.verso3D{
+	position:relative;
+	top:-400px;
+	opacity:0;
+	padding-top:70px;
+}
+
+.vignette3D:hover
+{border-radius:100%;}
+
+.vignette3D:hover .verso3D{
+	opacity:0;
+}
+
+.vignette3D:hover .recto3D{
+	opacity:0;
+}
+
+.modal-item-3D{
+	position:fixed;
+	top:7%;
+	right:0%;
+	bottom:5%;
+	left:0%;
+	background:#414141;
+	z-index:5;
+	opacity:0;
+	-webkit-transition:opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	pointer-events: none;
+	color:#afafaf;
+	padding:2%;
+}
+
+.modal-item-3D:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modal-item-3D > div {
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+
+
+
+.fermer-item3D{
+	position:fixed;
+	top:7vh;
+	right:3vw;
+	color:#e53454;
+	transform:scale(0.4);
+}
+
+.vignetteScul{
+	width:25vmin;
+	height:25vmin;
+	background:url(img/scul.jpg);
+	background-size:cover;
+	text-align:center;
+	color:#22313F;
+	font-family:calibri;
+	overflow:hidden;
+	transition:all 0.7s ease;
+}
+
+
+.rectoScul{
+	position:relative;
+	opacity:1;
+	padding-top:3vh;
+} 
+
+.versoScul{
+	position:relative;
+	top:-400px;
+	opacity:0;
+	padding-top:70px;
+}
+
+.vignetteScul:hover
+{border-radius:100%;}
+
+.vignetteScul:hover .versoScul{
+	opacity:0;
+}
+
+.vignetteScul:hover .rectoScul{
+	opacity:0;
+}
+
+.modal-item-Scul{
+	position:fixed;
+	top:7%;
+	right:0%;
+	bottom:5%;
+	left:0%;
+	background:#ba9394;
+	z-index:5;
+	opacity:0;
+	-webkit-transition:opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	pointer-events: none;
+	padding:2%;
+}
+
+.modal-item-Scul:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modal-item-Scul > div {
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+
+
+.fermer-itemScul{
+	position:fixed;
+	top:7vh;
+	right:3vw;
+	color:#f9c0cf;
+	transform:scale(0.4);
+}
+
+
+
+.vignetteAnim{
+	width:25vmin;
+	height:25vmin;
+	background:url(img/anim2.gif);
+	background-size:cover;
+	text-align:center;
+	color:#22313F;
+	font-family:calibri;
+	overflow:hidden;
+	transition:all 0.7s ease;
+}
+
+
+
+.rectoAnim{
+	position:relative;
+	opacity:1;
+	padding-top:3vh;
+} 
+
+.versoAnim{
+	position:relative;
+	top:-400px;
+	opacity:0;
+	padding-top:70px;
+}
+
+.vignetteAnim:hover
+{border-radius:100%;}
+
+.vignetteAnim:hover .versoAnim{
+	opacity:0;
+}
+
+.vignetteAnim:hover .rectoAnim{
+	opacity:0;
+}
+
+
+
+.modal-item-Anim{
+	position:fixed;
+	top:7%;
+	right:0%;
+	bottom:5%;
+	left:0%;
+	background:#2b2f42;
+	z-index:5;
+	opacity:0;
+	-webkit-transition:opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	pointer-events: none;
+	color:#afafaf;
+	padding:2%;
+}
+
+.modal-item-Anim:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modal-item-Anim > div {
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+
+
+
+.fermer-itemAnim{
+	position:fixed;
+	top:7vh;
+	right:3vw;
+	color:#e53454;
+	transform:scale(0.4);
+}
+
+.vignetteER{
+	width:25vmin;
+	height:25vmin;
+	background:url(img/ERVertic.jpeg);
+	background-size:cover;
+	text-align:center;
+	color:#22313F;
+	font-family:calibri;
+	overflow:hidden;
+	transition:all 0.7s ease;
+}
+
+
+
+
+.rectoER{
+	position:relative;
+	opacity:1;
+	padding-top:3vh;
+} 
+
+.versoER{
+	position:relative;
+	top:-400px;
+	opacity:0;
+	padding-top:70px;
+}
+
+.vignetteER:hover
+{border-radius:100%;}
+
+.vignetteER:hover .versoER{
+	opacity:0;
+}
+
+.vignetteER:hover .rectoER{
+	opacity:0;
+}
+
+.modal-item-ER{
+	position:fixed;
+	top:7%;
+	right:0%;
+	bottom:5%;
+	left:0%;
+	background:#fff9fa;
+	z-index:5;
+	opacity:0;
+	-webkit-transition:opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	pointer-events: none;
+	padding:2%;
+}
+
+.modal-item-ER:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modal-item-ER > div {
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+
+
+
+.fermer-itemER{
+	position:fixed;
+	top:7vh;
+	right:3vw;
+	color: #f9c0cf;
+	transform:scale(0.4);
+}
+
+
+.modal-item-prp{
+ position: fixed;
+ z-index:206;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+	opacity:0;
+	pointer-events: none;
+	background:#c1962c;
+}
+
+
+
+.modal-itemprp img{height:25vh;width:auto;float:center;text-align:center;}
+
+.modal-itemprp p{font-size:135%; font-family: 'Nothing You Could Do', cursive;float:center;text-align:center;}
+
+.modal-itemprp{
+	padding:5% 5% 5% 10%;
+	text align: justify;
+}
+
+.modal-item-prp:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modal-item-prp > div {
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+
+
+
+.fermer-itemprp{
+	position:fixed;
+	top:1%;
+	right:0;
+	color:black;
+	transform:scale(0.4);
+}
+.fermer-itemprp2{
+	position:fixed;
+	top:1%;
+	left:0;
+	color:black;
+	transform:scale(0.4);
+}
+.fermer-itemprp3{
+	position:fixed;
+	right:0;
+	bottom:1%;
+	color:black;
+	transform:scale(0.4);
+}
+.fermer-itemprp4{
+	position:fixed;
+	left:0;
+	bottom:1%;
+	color:black;
+	transform:scale(0.4);
+}
+
+.modal-item-ctc{
+position: fixed;
+ z-index:206;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+	opacity:0;
+	pointer-events: none;
+	background:#c1962c;
+}
+
+
+.modal-itemctc img{height:25vh;width:auto;float:center;text-align:center;}
+
+.modal-itemctc p{font-size:135%; font-family: 'Nothing You Could Do', cursive;float:center;text-align:center;}
+
+.modal-itemctc > div{display:inline-block;}
+
+.wrappercontact{width:50%;height:40%;float:right;}
+
+.wrapperfotoctc{width:40%;height:40%;float:left;}
+
+.modal-itemctc{
+	padding:5% 5% 5% 10%;
+	text align: justify;
+}
+
+.modal-item-ctc:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modal-item-ctc > div {
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+
+
+
+.fermer-itemctc{
+	position:fixed;
+	top:1%;
+	right:0;
+	color:black;
+	transform:scale(0.4);
+}
+
+.fermer-itemctc2{
+	position:fixed;
+	top:1%;
+	left:0;
+	color:black;
+	transform:scale(0.4);
+}
+
+.fermer-itemctc3{
+	position:fixed;
+	right:0;
+	bottom:1%;
+	color:black;
+	transform:scale(0.4);
+}
+
+.fermer-itemctc4{
+	position:fixed;
+	left:0;
+	bottom:1%;
+	color:black;
+	transform:scale(0.4);
+}
+
+.main h4{
+	text-align:center;
+	font-size:30pt;
+	font-family:calibri;
+}
+
+.modal-item1 p{
+	margin:5% 10% 5% 10% ;
+	text-align:justify;
+	
+}
+
+header{
+	height:7%;
+	text-align:center;
+	background:#0a4559;
+	font-size: 5vmin;
+}
+
+header p{display:inline-block;}
+
+#PN{font-size:75%;
+	color:#FFFAFA;
+	font-family: 'nunito', cursive;
+}
+#de{font-size:70%;font-family:'nunito';color:#F5F5F5;}
+#de2{font-size:70%;font-family:'nunito';color:#F5F5F5;opacity:0;}
+#JL{font-size:100%;
+    font-family: 'Nothing You Could Do', cursive;
+	color:#00FA9A;
+}
+
+
+
+footer{
+	position:sticky;
+	bottom:0px;
+	height:5%;
+	text-align:center;
+	background:#0a4559;
+	font-size:4vmin;
+}
+
+footer li{
+			display:inline-block;
+			padding-left:3%;
+			padding-right:8%;
+}
+
+
+footer a{color:#f9c0cf;text-decoration:none;}
+footer a:hover{color:#85e5ae;text-decoration:none;}
+
+.yo{display:inline; font-size:1vmin;}
+
+.modal-item-Num {
+padding:-3% 0;
+	text-align:center;}
+	
+	.modal-item-Num .horiz{
+	
+	width:auto;
+	height:10vmax;
+	float:center;
+	border:1px solid #F5F5F5;
+	text-align:right;
+	-webkit-box-shadow: 0px 2px 18px 2px rgba(0,0,0,1);
+-moz-box-shadow: 0px 2px 18px 2px rgba(0,0,0,1);
+box-shadow: 0px 2px 18px 2px rgba(0,0,0,1);
+		}
+
+		.modal-item-Num .vertic{
+	width:auto;
+	height:11vmax;
+	text-align:right;
+	float:center;
+	border:1px solid #F5F5F5;
+	-webkit-box-shadow: 0px 2px 18px 2px rgba(0,0,0,1);
+-moz-box-shadow: 0px 2px 18px 2px rgba(0,0,0,1);
+box-shadow: 0px 2px 18px 2px rgba(0,0,0,1);
+		}	
+		
+		
+		 .OpenVertic{
+			position:fixed;
+			margin:3% 3%;
+	width:auto;
+	height:80vh;
+	float:center;
+	z-index:7;
+ -webkit-box-shadow: 2px 4px 35px 12px rgba(0,0,0,1);
+-moz-box-shadow: 2px 4px 35px 12px rgba(0,0,0,1);
+box-shadow: 2px 4px 35px 12px rgba(0,0,0,1);
+		}	
+		
+		
+		 .OpenHoriz{
+			position:fixed;
+			margin:2% 5%;
+	height:80vh;
+	width:auto;
+	float:center;
+	z-index:7;
+    -webkit-box-shadow: 2px 4px 35px 12px rgba(0,0,0,1);
+-moz-box-shadow: 2px 4px 35px 12px rgba(0,0,0,1);
+box-shadow: 2px 4px 35px 12px rgba(0,0,0,1);
+	
+		}	
+
+		h2{
+	text-align:center;
+	padding-top:6vw;
+	font-size:6vw;
+}
+
+.vignetteScul h2, .vignetteAnim h2{
+	padding-top:10vw;
+}
+				
+				.modal-itemNum {
+padding:3% 14% 8% 12% ;}
+	 
+ .modal-itemTrad {
+padding:3% 14% 8% 12% ;}
+	 
+ .modal-item3D {
+padding:3% 14% 8% 12% ;}
+	 
+ .modal-itemScul {
+padding:3% 14% 8% 12% ;}
+	 
+ .modal-itemAnim {
+padding:3% 14% 8% 12% ;}
+	 
+ .modal-itemER {
+padding:3% 14% 8% 12% ;}
+				
+				.navpaysage{z-index:1;display:none;}
+				.navportrait{z-index:7;position:fixed;}
+				
+				
+				#menuToggle{
+				display: block;
+				position: relative;
+				top: -27px;
+				left: -3px;
+				z-index:1;
+				user-select: none; /*permet de spécifier si l'élément html est selectionable */
+				-webkit-user-select: none;
+			}
+			
+			
+			#menuToggle input{
+				display: block;
+				width:30px;
+				height:30px;
+				position: absolute;
+				top: -7px;
+				left: -5px;
+				z-index:2;
+				cursor: pointer;
+				opacity:0;
+				-webkit-touch-callout: none;
+				-o-touch-callout: none;
+				-moz-touch-callout: none;
+			}
+			
+			/* #menuToggle input:checked{ */
+				/* width:26vw; */
+				/* height:100vh; */
+/* } */
+				
+			#menuToggle span{
+				display:block;
+				width: 33px;
+				height: 4px;
+				margin-bottom: 2px;
+				position: relative;
+				background: #00FA9A;
+				border-radius: 3px;
+				z-index: -10;
+				transform:scale(0.6) translateY(0px);
+				
+				transform-origin: 4px 0px;
+				/*permet de spécifier le point d'origine des transformations 2d et 3d lors de l'utilisation de la propriété css transform*/
+				
+				transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+			}
+			
+			/*cubic-bezier, quatre valeurs qui spécifient les points P1 et P2 de la courbe de bezier (x1, y1, x2, y2). x1, y1, x2, y2 sont des nombres décimaux avec au moins un chiffre après la virgule les X doivent être cpmpris entre 0 et 1 */
+			
+			#menuToggle span :first-child{transform-origin: 0 0%;
+				transform:scale(0.6) translateY(0px);}
+			#menuToggle span :nth-child(2){transform-origin: 0% 100%;
+				transform:scale(0.6) translateY(0px);}
+			
+			/* "first-child" : permet de cibler dans les enfants et sous enfants d'un élément html tous les premiers enfants trouvés afin de leur assigner des propriétés css. */
+			
+			/* nth-child permet de cibler les n-ième enfants afin de leurs assigner des propriétés css. */
+			
+			#menuToggle input:checked ~ span{
+				opacity: 1;
+				transform: rotate(45deg)  translateY(0px) translate(2px, -5px) scale(0.6);
+				background: #00FA9A;
+			}
+			
+			#menuToggle input:checked ~ span:nth-last-child(2){
+				opacity: 1;
+				transform: rotate(-45deg) translateY(0px) translate(2px, 4px)scale(0.6);
+			}
+			
+			#menuToggle input:checked ~ span:nth-last-child(3){
+				opacity: 0;
+				transform:scale(0.6);
+				transform: rotate(0deg)  translateY(0px) scale(0.2, 0.2);
+			}
+			
+			/* on code la zone du menu */
+			
+			#menu{
+				position: absolute;
+				display:inline;
+				width:26vw;
+				border-left:25px solid black;
+				margin: -122px 0 0 -59px;
+				padding: 0px;
+				padding-top: 125px;
+				list-style-type: none;
+				transform-origin: 0% 0%;
+				transform: translate(-100%, 0);
+				transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+			}
+			
+			
+			
+			#menuToggle input:checked ~ ul{
+				transform: scale(1.0, 1.0);
+				opacity: 1;
+			}
+			
+			
+			
+			
+			nav li{
+			width:115%;
+			height:14.67vh;
+			background:#e0e0eb;
+			list-style-type:none;
+			transition: all 0.4s ease;}
+			
+		
+.itemNum, .itemTrad, .itemER{
+
+	text-align:center;
+	vertical-align:center;
+	padding-top:6%;
+	box-sizing:border-box;
+}
+
+.itemScul, .item3D, .itemAnim{
+
+	text-align:center;
+	vertical-align:center;
+	padding-top:6%;
+	box-sizing:border-box;
+}
+
+#menu a{
+	text-decoration:none;
+	position:relative;
+	width:100%;
+	cursor:pointer;
+	height:100%;
+}
+.itemNum p, .itemTrad p, .item3D p, .itemER p, .itemScul p, .itemAnim p{
+	color:#ececec;
+	font-size:4.4vmin;
+	opacity:0;
+}
+
+.itemTrad p, .itemER p, .itemScul p{color:#22313F;}
+
+.itemNum{
+    background:url(img/numVertic.jpeg);
+    background-size:cover;opacity:0.8;
+}
+.itemNum:hover{
+    opacity:1.7;}
+.itemTrad{
+    background:url(img/trad.jpg);
+    background-size:cover;opacity:0.8;
+}.itemTrad:hover{
+     opacity:1;}
+.item3D{
+    background:url(img/3dmenu.JPG);
+    background-size:cover;opacity:0.8;
+}
+.item3D:hover{opacity:1.7;}
+.itemScul{
+    background:url(img/scul.JPG);
+    background-size:cover;opacity:0.9;
+}
+.itemScul:hover{opacity:1.7;}
+.itemAnim{
+    background:url(img/anim2.gif);
+    background-size:cover;opacity:0.8;
+}
+.itemAnim:hover{opacity:1;}
+.itemER{
+    background:url(img/ERmenu.jpeg);
+    background-size:cover;opacity:0.8;
+}
+.itemER:hover{opacity:1;}
+
+
+
+/*RESPONSIVE*/
+
+  
+
+  @media screen and (orientation:landscape){
+	  .yo{display:none;} 
+	  #menuToggle, #menu, #menu a li{z-index:100;}
+	  #menuToggle input{z-index:101;}
+				.navpaysage{z-index:1;z-index:99;display:inline;position:sticky;}
+				.navportrait{z-index:99;position:fixed;display:none;}
+	  
+	  .main{
+	height:100%;
+	overflow:auto;
+	margin-top:-1em;
+	}	
+	  
+	  #hs{width:42vmin;height:auto;margin:3vh 0 0 4%;}
+		.main ul{margin:-10% 1% 0 31.5%;transform:size(0.7)}
+	 
+.main ul li{ 
+	list-style-type:none;
+	display:inline-block;
+margin:2% 4% 4% 2%;}
+	
+	
+	
+	#menuToggle{
+		display: block;
+				position: relative;
+		top: -21px;
+		
+		left: 16px;
+	}
+		
+	nav li{
+		margin-left: 18px;
+			width:100%;
+			height:14.65vh;
+		}
+		
+			
+    .itemNum p, .itemTrad p, .item3D p, .itemER p, .itemScul p, .itemAnim p{
+        width:100%;
+        font-size:4.4vmin;
+		z-index:1;
+		opacity:1;
+        }
+    .itemNum{background:#60768b;}
+    .itemNum:hover{background:#435e77;}
+    .itemTrad{background:#c4b0c3;}
+    .itemTrad:hover{background:#dbc3da;}
+    .item3D{background:#4b5259;}
+    .item3D:hover{background:#414141;}
+    .itemScul{background:#aa8f8f;}
+    .itemScul:hover{background:#ba9394;}
+    .itemAnim{background:#424860;}
+    .itemAnim:hover{background:#2b2f42;}
+    .itemER{background:#ffced6;}
+    .itemER:hover{background:#fff9fa;}
+  
+  }
+  
+   @media screen and (orientation:portrait) and (max-width:600px){
+
+ 
+ .OpenVertic{
+			position:fixed;
+			margin:23% 3%;
+	width:auto;
+	height:50vh;
+	float:center;
+	z-index:7;
+ -webkit-box-shadow: 2px 4px 35px 12px rgba(0,0,0,1);
+-moz-box-shadow: 2px 4px 35px 12px rgba(0,0,0,1);
+box-shadow: 2px 4px 35px 12px rgba(0,0,0,1);
+		}	
+		
+		
+		 .OpenHoriz{
+			position:fixed;
+			margin:32% 5%;
+	height:auto;
+	width:80vw;
+	float:center;
+	z-index:7;
+    -webkit-box-shadow: 2px 4px 35px 12px rgba(0,0,0,1);
+-moz-box-shadow: 2px 4px 35px 12px rgba(0,0,0,1);
+		 box-shadow: 2px 4px 35px 12px rgba(0,0,0,1);}
+		 
+		 
+		 #menuToggle span{
+				display:block;
+				width: 33px;
+				height: 4px;
+				margin-bottom: 3px;
+				position: relative;
+				background: #00FA9A;
+				border-radius: 3px;
+				z-index: -10;
+				transform:scale(0.7) translate(-20px, -3px);
+				
+				transform-origin: 4px 0px;
+				/*permet de spécifier le point d'origine des transformations 2d et 3d lors de l'utilisation de la propriété css transform*/
+				
+				transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+			}
+			
+			/*cubic-bezier, quatre valeurs qui spécifient les points P1 et P2 de la courbe de bezier (x1, y1, x2, y2). x1, y1, x2, y2 sont des nombres décimaux avec au moins un chiffre après la virgule les X doivent être cpmpris entre 0 et 1 */
+			
+			#menuToggle span :first-child{transform-origin: 0 0%;
+				transform:scale(0.7) translate(-20px, -3px);}
+			#menuToggle span :nth-child(2){transform-origin: 0% 100%;
+				transform:scale(0.7) translate(-20px, -3px);}
+			
+			/* "first-child" : permet de cibler dans les enfants et sous enfants d'un élément html tous les premiers enfants trouvés afin de leur assigner des propriétés css. */
+			
+			/* nth-child permet de cibler les n-ième enfants afin de leurs assigner des propriétés css. */
+			
+			#menuToggle input:checked ~ span{
+				opacity: 1;
+				transform: rotate(-30deg) translate(-15px, 5px) scale(0.7);
+				background: #00FA9A;
+			}
+			
+			#menuToggle input:checked ~ span:nth-last-child(2){
+				opacity: 1;
+				transform: rotate(30deg) translate(-14px, -3px) scale(0.7);
+			}
+			
+			#menuToggle input:checked ~ span:nth-last-child(3){
+				opacity: 0;
+				transform:scale(1.3);
+				transform: rotate(0deg) translate(-17px, -5px) scale(0.2, 0.2);
+			}
+		 
+			#menuToggle{
+		display: block;
+				position: relative;
+		top: -30px;
+		
+		left: 8px;
+		}
+		 
+   }
+   @media screen and (orientation:landscape) and (max-height:420px){
+	  
+	 
+#menuToggle span{
+				display:block;
+				width: 33px;
+				height: 4px;
+				margin-bottom: 2px;
+				position: relative;
+				background: #00FA9A;
+				border-radius: 3px;
+				z-index: -10;
+				transform:scale(0.6) translateY(4.5px);
+				
+				transform-origin: 4px 0px;
+				/*permet de spécifier le point d'origine des transformations 2d et 3d lors de l'utilisation de la propriété css transform*/
+				
+				transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+			}
+			
+			/*cubic-bezier, quatre valeurs qui spécifient les points P1 et P2 de la courbe de bezier (x1, y1, x2, y2). x1, y1, x2, y2 sont des nombres décimaux avec au moins un chiffre après la virgule les X doivent être cpmpris entre 0 et 1 */
+			
+			#menuToggle span :first-child{transform-origin: 0 0%;
+				transform:scale(0.6) translateY(0px);}
+			#menuToggle span :nth-child(2){transform-origin: 0% 100%;
+				transform:scale(0.6) translateY(0px);}
+			
+			/* "first-child" : permet de cibler dans les enfants et sous enfants d'un élément html tous les premiers enfants trouvés afin de leur assigner des propriétés css. */
+			
+			/* nth-child permet de cibler les n-ième enfants afin de leurs assigner des propriétés css. */
+			
+			#menuToggle input:checked ~ span{
+				opacity: 1;
+				transform: rotate(45deg)  translateX(3px) translate(2px, -1px) scale(0.6);
+				background: #00FA9A;
+			}
+			
+			#menuToggle input:checked ~ span:nth-last-child(2){
+				opacity: 1;
+				transform: rotate(-45deg) translateY(3px) translate(2px, 4px)scale(0.6);
+			}
+			
+			#menuToggle input:checked ~ span:nth-last-child(3){
+				opacity: 0;
+				transform:scale(0.6);
+				transform: rotate(0deg)  translateY(3px) scale(0.2, 0.2);
+			}
+   }
+   
+ @media screen and (orientation:portrait) and (min-height:600px){
+		
+			#menuToggle{
+		display: block;
+				position: relative;
+		top: -38px;
+		
+		left: 9px;
+		}
+		
+		
+	
+		
+		#menuToggle span{
+				display:block;
+				width: 33px;
+				height: 4px;
+				margin-bottom: 5px;
+				position: relative;
+				background: #00FA9A;
+				border-radius: 3px;
+				z-index: -10;
+				transform:scale(1) translate(-15px, -4px);
+				
+				transform-origin: 4px 0px;
+				/*permet de spécifier le point d'origine des transformations 2d et 3d lors de l'utilisation de la propriété css transform*/
+				
+				transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+			}
+			
+			/*cubic-bezier, quatre valeurs qui spécifient les points P1 et P2 de la courbe de bezier (x1, y1, x2, y2). x1, y1, x2, y2 sont des nombres décimaux avec au moins un chiffre après la virgule les X doivent être cpmpris entre 0 et 1 */
+			
+			#menuToggle span :first-child{transform-origin: 0 0%;
+				transform:scale(1) translate(-15px, -4x);}
+			#menuToggle span :nth-child(2){transform-origin: 0% 100%;
+				transform:scale(1) translate(-15px, -4px);}
+			
+			/* "first-child" : permet de cibler dans les enfants et sous enfants d'un élément html tous les premiers enfants trouvés afin de leur assigner des propriétés css. */
+			
+			/* nth-child permet de cibler les n-ième enfants afin de leurs assigner des propriétés css. */
+			
+			#menuToggle input:checked ~ span{
+				opacity: 1;
+				transform: rotate(-30deg) translate(-14px, -7px) scale(1);
+				background: #00FA9A;
+			}
+			
+			#menuToggle input:checked ~ span:nth-last-child(2){
+				opacity: 1;
+				transform: rotate(30deg) translate(-18px, -4.5px) scale(1);
+			}
+			
+			#menuToggle input:checked ~ span:nth-last-child(3){
+				opacity: 0;
+				transform:scale(1.3);
+				transform: rotate(0deg) translate(-17px, -5px) scale(0.2, 0.2);
+			}
+			
+			
+			
+	 
+ }
+   @media screen and (orientation:portrait) and (min-height: 800px){
+
+	header{padding-top:13px;padding-left:23px;}
+   
+ }		
+  @media screen and (orientation:portrait) and (min-height: 900px){
+	  	header{padding-top:0px;padding-left:13px;}
+		.fermer-itemNum, .fermer-item3D, .fermer-itemAnim, fermer-itemER, fermer-itemScul, fermer-itemTrad{
+	position:fixed;
+	top:9vh;
+	right:5vw;
+	transform:scale(0.8);
+}
+			#menuToggle{
+		display: block;
+				position: relative;
+		top: -43px;
+		
+		left: 16px;
+		}
+		
+		#menuToggle span{
+				display:block;
+				width: 33px;
+				height: 4px;
+				margin-bottom: 5px;
+				position: relative;
+				background: #00FA9A;
+				border-radius: 3px;
+				z-index: -10;
+				transform:scale(1) translate(-17px, -15px);
+				
+				transform-origin: 4px 0px;
+				/*permet de spécifier le point d'origine des transformations 2d et 3d lors de l'utilisation de la propriété css transform*/
+				
+				transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+			}
+			
+			/*cubic-bezier, quatre valeurs qui spécifient les points P1 et P2 de la courbe de bezier (x1, y1, x2, y2). x1, y1, x2, y2 sont des nombres décimaux avec au moins un chiffre après la virgule les X doivent être cpmpris entre 0 et 1 */
+			
+			#menuToggle span :first-child{transform-origin: 0 0%;
+				transform:scale(1) translate(-17px, -15px);}
+			#menuToggle span :nth-child(2){transform-origin: 0% 100%;
+				transform:scale(1) translate(-75px, -15px);}
+			
+			/* "first-child" : permet de cibler dans les enfants et sous enfants d'un élément html tous les premiers enfants trouvés afin de leur assigner des propriétés css. */
+			
+			/* nth-child permet de cibler les n-ième enfants afin de leurs assigner des propriétés css. */
+			
+			#menuToggle input:checked ~ span{
+				opacity: 1;
+				transform: rotate(-30deg) translate(-16px, -7px) scale(1);
+				background: #00FA9A;
+			}
+			
+			#menuToggle input:checked ~ span:nth-last-child(2){
+				opacity: 1;
+				transform: rotate(30deg) translate(-20px, -4.5px) scale(1);
+			}
+			
+			#menuToggle input:checked ~ span:nth-last-child(3){
+				opacity: 0;
+				transform:scale(1.3);
+				transform: rotate(0deg) translate(-17px, -5px) scale(0.2, 0.2);
+			}
+		
+  }
+ 
+  @media screen and (orientation:portrait) and (min-height: 1000px){
+	
+	 .fermer-itemNum, .fermer-item3D, .fermer-itemAnim, fermer-itemER, fermer-itemScul, fermer-itemTrad{
+	position:fixed;
+	top:9vh;
+	right:5vw;
+	transform:scale(0.8);
+}
+	
+		nav li{
+			width:75%;}
+		
+			#menuToggle{
+		display: block;
+				position: relative;
+		top: -45px;
+		
+		left: 0px;
+		}
+		
+		#menuToggle span{
+				display:block;
+				width: 33px;
+				height: 4px;
+				margin-bottom: 5px;
+				position: relative;
+				background: #00FA9A;
+				border-radius: 3px;
+				z-index: -10;
+				transform:scale(1) translate(-6px, -12px);
+				
+				transform-origin: 4px 0px;
+				/*permet de spécifier le point d'origine des transformations 2d et 3d lors de l'utilisation de la propriété css transform*/
+				
+				transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+			}
+			
+			/*cubic-bezier, quatre valeurs qui spécifient les points P1 et P2 de la courbe de bezier (x1, y1, x2, y2). x1, y1, x2, y2 sont des nombres décimaux avec au moins un chiffre après la virgule les X doivent être cpmpris entre 0 et 1 */
+			
+			#menuToggle span :first-child{transform-origin: 0 0%;
+				transform:scale(1) translate(-6px, -12px);}
+			#menuToggle span :nth-child(2){transform-origin: 0% 100%;
+				transform:scale(1) translate(-6px, -12px);}
+			
+			/* "first-child" : permet de cibler dans les enfants et sous enfants d'un élément html tous les premiers enfants trouvés afin de leur assigner des propriétés css. */
+			
+			/* nth-child permet de cibler les n-ième enfants afin de leurs assigner des propriétés css. */
+			
+			#menuToggle input:checked ~ span{
+				opacity: 1;
+				transform: rotate(-30deg) translate(-5px, -10px) scale(1);
+				background: #00FA9A;
+			}
+			
+			#menuToggle input:checked ~ span:nth-last-child(2){
+				opacity: 1;
+				transform: rotate(30deg) translate(-17px, -15px) scale(1);
+			}
+			
+			#menuToggle input:checked ~ span:nth-last-child(3){
+				opacity: 0;
+				transform:scale(1.3);
+				transform: rotate(0deg) translate(-13px, -8px) scale(0.2, 0.2);
+			}
+		
+		
+		
+  }
+  
+   @media screen and (orientation:portrait) and (min-height: 1300px){
+  .fermer-itemNum, .fermer-item3D, .fermer-itemAnim, fermer-itemER, fermer-itemScul, fermer-itemTrad{
+	position:fixed;
+	top:9vh;
+	right:5vw;
+	transform:scale(0.8);
+}
+			#menuToggle{
+		display: block;
+				position: relative;
+		top: -50px;
+		
+		left: -5px;
+		}
+		
+  }
+  
+   @media screen and (orientation:landscape) and (min-width: 1000px){
+  
+  .fermer-itemNum, .fermer-item3D, .fermer-itemAnim, fermer-itemER, fermer-itemScul, fermer-itemTrad{
+	position:fixed;
+	top:9vh;
+	right:5vw;
+	transform:scale(0.8);
+}
+	#menuToggle span{
+				display:block;
+				width: 33px;
+				height: 4px;
+				margin-bottom: 5px;
+				position: relative;
+				background: #00FA9A;
+				border-radius: 3px;
+				z-index: -10;
+				transform:scale(1) translate(-6px, -22px);
+				
+				transform-origin: 4px 0px;
+				/*permet de spécifier le point d'origine des transformations 2d et 3d lors de l'utilisation de la propriété css transform*/
+				
+				transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+			}
+   
+   #menuToggle span :first-child{transform-origin: 0 0%;
+				transform:scale(1) translate(-6px, -12px);}
+			#menuToggle span :nth-child(2){transform-origin: 0% 100%;
+				transform:scale(1) translate(-6px, -12px);}
+			
+			/* "first-child" : permet de cibler dans les enfants et sous enfants d'un élément html tous les premiers enfants trouvés afin de leur assigner des propriétés css. */
+			
+			/* nth-child permet de cibler les n-ième enfants afin de leurs assigner des propriétés css. */
+			
+			#menuToggle input:checked ~ span{
+				opacity: 1;
+				transform: rotate(-30deg) translate(-5px, -10px) scale(1);
+				background: #00FA9A;
+			}
+			
+			#menuToggle input:checked ~ span:nth-last-child(2){
+				opacity: 1;
+				transform: rotate(30deg) translate(-18px, -14.5px) scale(1);
+			}
+			
+			#menuToggle input:checked ~ span:nth-last-child(3){
+				opacity: 0;
+				transform:scale(1.3);
+				transform: rotate(0deg) translate(-15px, -15px) scale(0.2, 0.2);
+			}
+			
+			
+			#menuToggle input{transform:translateY(-10px) scale(1.5);}
+   
+   
+			nav li{transform:translateY(-10px);}
+   }
+		
+		
+										/* ANIMATION */
+			
+			
+		.OpenVertic{
+			position:relative;
+			top:20px;
+			left:20px;
+			animation-name: animationVertic;
+			animation-duration: 4s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			
+			/* <!-- animation-direction: alternate-reverse; --> */
+		}
+		.OpenHoriz{
+			position:relative;
+			top:20px;
+			left:20px;
+			animation-name: animationHoriz;
+			animation-duration: 4s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		
+			/* <!-- animation-direction: alternate-reverse; --> */
+		}
+		
+		@keyframes animationVertic {
+		0% {transform: translateX(0%) translateY(0%) rotate(-0.1deg)}
+		25% {transform: translateX(1.2%) translateY(0%) rotate(-0.1deg)}
+		50% {transform: translateX(1.2%) translateY(1%) rotate(0.1deg)}
+		75% {transform: translateX(0%) translateY(1%) rotate(0.1deg)}
+		100% {transform: translateX(0%) translateY(0%) rotate(-0.1deg)}}
+		/* <!-- 2turn=720deg --> */
+		
+		
+		@keyframes animationHoriz {
+		0% {transform: translateX(0%) translateY(0%) rotate(-0.1deg) }
+		25% {transform: translateX(1.2%) translateY(0%) rotate(-0.1deg)}
+		50% {transform: translateX(1.2%) translateY(1%) rotate(0.1deg) }
+		75% {transform: translateX(0%) translateY(1%) rotate(0.1deg) }
+		100% {transform: translateX(0%) translateY(0%) rotate(-0.1deg) }}
+		/* <!-- 2turn=720deg --> */
+		
