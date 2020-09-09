@@ -1,2 +1,3 @@
-# Portfolio-Nume-rique-de-Jeanne-Legrand
+# Portfolio-Numerique-de-Jeanne-Legrand
  
+Exercice pratique et accesoirement futur portolio de Mlle Legrand.
