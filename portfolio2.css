@@ -970,12 +970,12 @@ padding:3% 14% 8% 12% ;}
 }.itemTrad:hover{
      opacity:1;}
 .item3D{
-    background:url(img/3dmenu.JPG);
+    background:url(img/3dmenu.jpg);
     background-size:cover;opacity:0.8;
 }
 .item3D:hover{opacity:1.7;}
 .itemScul{
-    background:url(img/scul.JPG);
+    background:url(img/scul.jpg);
     background-size:cover;opacity:0.9;
 }
 .itemScul:hover{opacity:1.7;}
