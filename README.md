@@ -1,6 +1,6 @@
 # Portfolio-Numerique-de-Jeanne-Legrand
 
-<<<<<<<
+[Résultat](https://zlarb02.github.io/Portfolio-Numerique-de-Jeanne-Legrand/Main.html)
 
 Exercice pratique et accesoirement futur portfolio de Mlle Legrand.
 =======
